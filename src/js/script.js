@@ -19,11 +19,13 @@ smallImg.forEach(element => {
     element.addEventListener("click", () => {
         lightBoxImg.src = element.dataset.fullImg;
         lightBox.showModal()
+        lightBox.classList.toggle("open", true);
     })
 });
 
 
 //listener qui ferme la lightbox
 lightBox.addEventListener("click", () => {
-    lightBox.close()
+    lightBox.close();
+    lightBox.classList.toggle("open", false);
 });
