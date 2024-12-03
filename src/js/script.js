@@ -6,3 +6,8 @@ console.log(lightBox);
 const smallImg = document.querySelectorAll("li>img");
 console.log(smallImg);
 
+smallImg.forEach(element => {
+    element.addEventListener("click", () => {
+        lightBox.showModal()
+    })
+});
