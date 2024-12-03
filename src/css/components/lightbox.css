@@ -3,7 +3,7 @@
     top: 100px;
     left: 100px;
     border-radius: 4%;
-    transition: all 0.5s ease-out;
+    transition: scale 0.5s ease-out;
     scale: 0;
 }
 
@@ -13,5 +13,10 @@
 
 #lightbox::backdrop {
     background-color: brown;
+    transition: opacity 0.5s ease-out;
+    opacity: 0%;
+}
+
+#lightbox.open::backdrop {
     opacity: 50%;
 }
