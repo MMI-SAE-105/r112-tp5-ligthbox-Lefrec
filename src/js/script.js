@@ -10,6 +10,9 @@ console.log(lightBox);
 const lightBoxImg = document.querySelector("#lightbox>img");
 console.log(lightBoxImg);
 
+const lightBoxAnimal = document.querySelector("#lightbox>p");
+console.log(lightBoxAnimal);
+
 const smallImg = document.querySelectorAll("li>img");
 console.log(smallImg);
 
@@ -18,6 +21,7 @@ console.log(smallImg);
 smallImg.forEach(element => {
     element.addEventListener("click", () => {
         lightBoxImg.src = element.dataset.fullImg;
+        lightBoxAnimal.textContent = element.dataset.animal
         lightBox.showModal()
         lightBox.classList.toggle("open", true);
     })
