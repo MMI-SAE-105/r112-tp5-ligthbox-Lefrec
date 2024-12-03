@@ -8,12 +8,12 @@
 }
 
 #lightbox.open{
-    scale: 1;
+    scale: 1.2;
 }
 
 #lightbox::backdrop {
     background-color: brown;
-    transition: opacity 0.5s ease-out;
+    transition: opacity 2s ease-out;
     opacity: 0%;
 }
 
