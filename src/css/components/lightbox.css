@@ -1,3 +1,11 @@
 /**
 * Lightbox
 */
+
+#lightbox {
+    border-radius: 4%;
+}
+
+#lightbox::backdrop {
+    background-color: rgba(100, 10, 10, 0.25);
+}
