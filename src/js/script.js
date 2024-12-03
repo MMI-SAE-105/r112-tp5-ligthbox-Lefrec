@@ -11,3 +11,7 @@ smallImg.forEach(element => {
         lightBox.showModal()
     })
 });
+
+lightBox.addEventListener("click", () => {
+    lightBox.close()
+});
